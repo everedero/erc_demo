@@ -1,0 +1,53 @@
+* Connections
+Pin not connected
+Input pin not driven by any Output pins
+Input Power pin not driven by any Output Power pins
+A pin with a \"no connection\" flag is connected
+Unconnected \"no connection\" flag
+Label not connected
+Global label only appears once in the schematic
+Wires not connected to anything
+Ground pin not connected to ground net
+
+* Conflict
+Duplicate reference designators
+Units of same symbol have different values
+Different footprint assigned in another unit of the symbol
+Different net assigned to a shared pin in another unit of the symbol
+Duplicate sheet names within a given sheet
+Mismatch between hierarchical labels and sheet pins
+More than one name given to this bus or net
+Conflict between bus alias definitions across schematic sheets
+Buses are graphically connected but share no bus members
+Invalid connection between bus and net items
+Net is graphically connected to a bus but not a bus member
+
+* Misc
+Symbol is not annotated
+Unresolved text variable
+SPICE model issue
+Labels are similar (lower/upper case difference only)
+Power pins are similar (lower/upper case difference only)
+Power pin and label are similar (lower/upper case difference only)
+Library symbol issue
+Symbol has more units than are defined
+Symbol has units that are not placed
+Symbol has input pins that are not placed
+Symbol has bidirectional pins that are not placed
+Symbol has power input pins that are not placed
+
+Conflict problem between pins (Conflicts Map)
+
+Symbol pin or wire end off connection grid
+Multiple pins with the same pin number
+Four connection points are joined together
+Label connects more than one wire
+Label connected to only one pin
+Local and global labels have same name
+Pin name resembles stacked pin
+Undefined netclass
+Symbol doesn't match copy in library
+Footprint link issue
+Assigned footprint doesn't match footprint filters
+Bus Entry needed
+Unconnected wire endpoint
