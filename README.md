@@ -4,6 +4,8 @@ Catastrophic schematics made to demonstrate why ERC exists, and how to use them.
 
 Current KiCAD version used: V8
 
+Also see exemple in: https://github.com/everedero/asynth2osc/tree/broken_erc
+
 ## KiCAD ERC saving the day
 
 * Get to know them!
