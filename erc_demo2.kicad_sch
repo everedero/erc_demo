@@ -1248,141 +1248,6 @@
 		(uuid "feda1115-a461-4dd8-8092-c47786c994d9")
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 49.53 26.67 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "17e93808-9416-4dff-a8ab-d9157a189bb7")
-		(property "Reference" "#PWR1"
-			(at 49.53 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 49.53 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 49.53 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 49.53 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 49.53 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "524b833d-4889-49cc-aae3-2e9a174ebff8")
-		)
-		(instances
-			(project "erc_demo"
-				(path "/c0ee82df-0125-4137-95bd-a880c945d7bb"
-					(reference "#PWR1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 44.45 53.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2bd5d197-428d-4ecb-b6c8-032ce267d621")
-		(property "Reference" "R4"
-			(at 43.18 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 46.99 54.864 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 42.672 53.34 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 44.45 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 44.45 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "1318d500-63f6-4781-a3df-a429101f9bef")
-		)
-		(pin "1"
-			(uuid "e760d6ac-c581-41d8-844f-f406048e49c8")
-		)
-		(instances
-			(project "erc_demo2"
-				(path "/c0ee82df-0125-4137-95bd-a880c945d7bb"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 54.61 53.34 0)
 		(unit 1)
@@ -1390,8 +1255,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "2f887660-2e6e-4717-8b54-1f8ad91c0d24")
-		(property "Reference" "R8"
+		(uuid "4d11c77d-816b-4817-9c08-f26470d00372")
+		(property "Reference" "R7"
 			(at 53.34 49.53 0)
 			(effects
 				(font
@@ -1443,6 +1308,12 @@
 			(uuid "ef626de2-d1bc-4adf-984f-a484046d2ca6")
 		)
 		(instances
+			(project "prj_erc"
+				(path "/4193f6fe-8549-4492-bb81-b789debaebf4/a2fb4689-2293-42c4-95ef-94957dcfe7ed"
+					(reference "R7")
+					(unit 1)
+				)
+			)
 			(project "erc_demo2"
 				(path "/c0ee82df-0125-4137-95bd-a880c945d7bb"
 					(reference "R8")
@@ -1452,16 +1323,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 44.45 29.21 180)
+		(lib_id "power:GND")
+		(at 49.53 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "75dbb581-de61-47a5-b88e-a166c14e2297")
-		(property "Reference" "#FLG2"
-			(at 44.45 31.115 0)
+		(fields_autoplaced yes)
+		(uuid "4e65bf3c-5f84-4891-baeb-d37ee6e4b64a")
+		(property "Reference" "#PWR0104"
+			(at 49.53 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1469,8 +1341,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "PWR_FLAG"
-			(at 41.656 34.29 0)
+		(property "Value" "GND"
+			(at 49.53 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1478,7 +1350,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 44.45 29.21 0)
+			(at 49.53 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1486,8 +1358,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 44.45 29.21 0)
+		(property "Datasheet" ""
+			(at 49.53 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1495,8 +1367,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 44.45 29.21 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 49.53 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1505,46 +1377,35 @@
 			)
 		)
 		(pin "1"
-			(uuid "4e750b15-f376-4337-85e0-11d9cb695684")
+			(uuid "b7e2dadb-bf44-4c44-bbe8-c6f1c91183e0")
 		)
 		(instances
+			(project "prj_erc"
+				(path "/4193f6fe-8549-4492-bb81-b789debaebf4/a2fb4689-2293-42c4-95ef-94957dcfe7ed"
+					(reference "#PWR0104")
+					(unit 1)
+				)
+			)
 			(project "erc_demo"
 				(path "/c0ee82df-0125-4137-95bd-a880c945d7bb"
-					(reference "#FLG2")
+					(reference "#PWR2")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 54.61 72.39 0)
+		(lib_id "power:+3V3")
+		(at 39.37 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "7e76cf63-1f4f-428a-ae52-cd735faea8ad")
-		(property "Reference" "R7"
-			(at 53.34 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100k"
-			(at 52.324 74.93 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 52.832 72.39 90)
+		(fields_autoplaced yes)
+		(uuid "5a0d75e3-e250-4edc-9351-1718906fb39c")
+		(property "Reference" "#PWR0102"
+			(at 39.37 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1552,68 +1413,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 54.61 72.39 0)
+		(property "Value" "+3V3"
+			(at 39.37 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 54.61 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "1062b214-8cdc-45d3-b7f2-c25a220a2005")
-		)
-		(pin "1"
-			(uuid "f5338bf8-6b27-4795-b737-dc6b68e02361")
-		)
-		(instances
-			(project "erc_demo2"
-				(path "/c0ee82df-0125-4137-95bd-a880c945d7bb"
-					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x04")
-		(at 29.21 62.23 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "833419a8-6eef-4582-8757-23f0159cda69")
-		(property "Reference" "J5"
-			(at 24.638 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x04"
-			(at 29.21 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 29.21 62.23 0)
+			(at 39.37 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1621,8 +1430,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 29.21 62.23 0)
+		(property "Datasheet" ""
+			(at 39.37 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1630,307 +1439,28 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 29.21 62.23 0)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 39.37 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "2"
-			(uuid "cf956d92-eaaa-4ab2-b71c-be295944413b")
 		)
 		(pin "1"
-			(uuid "98ddc33f-aeee-4fe2-9e7d-e63472acaba1")
-		)
-		(pin "3"
-			(uuid "364515b6-aded-4b99-887d-86a9521dbf58")
-		)
-		(pin "4"
-			(uuid "4d89f6fd-f414-408a-8761-422bfbcf4d91")
+			(uuid "839b1e3e-6fa8-4534-b9b1-5ef7e47999b2")
 		)
 		(instances
-			(project "erc_demo2"
-				(path "/c0ee82df-0125-4137-95bd-a880c945d7bb"
-					(reference "J5")
+			(project "prj_erc"
+				(path "/4193f6fe-8549-4492-bb81-b789debaebf4/a2fb4689-2293-42c4-95ef-94957dcfe7ed"
+					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 39.37 53.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "86f0fe7d-91fb-42b7-8256-b5c6f414421f")
-		(property "Reference" "R2"
-			(at 38.1 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 41.656 55.118 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 37.592 53.34 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 39.37 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 39.37 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "8a5b81a5-2445-4a3c-8c41-12bca87316a7")
-		)
-		(pin "1"
-			(uuid "a0d180b7-2fc5-4b06-a30b-fd1698caf273")
-		)
-		(instances
 			(project "erc_demo"
 				(path "/c0ee82df-0125-4137-95bd-a880c945d7bb"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 39.37 72.39 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "942dc29d-8dc6-4ef6-aca0-97dd851a9f11")
-		(property "Reference" "R1"
-			(at 38.1 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100k"
-			(at 37.084 74.93 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 37.592 72.39 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 39.37 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 39.37 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "3b7ba3ad-1329-4a33-a297-2a0b491ee551")
-		)
-		(pin "1"
-			(uuid "30c55a77-1906-47f5-a587-4ac61838c38e")
-		)
-		(instances
-			(project ""
-				(path "/c0ee82df-0125-4137-95bd-a880c945d7bb"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 49.53 53.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "98a63365-c6fb-4e16-a19b-bc4cb68ef50c")
-		(property "Reference" "R6"
-			(at 48.26 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 52.07 54.864 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 47.752 53.34 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 49.53 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 49.53 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "166f2ad3-558e-47a4-870b-aaf4254e5960")
-		)
-		(pin "1"
-			(uuid "88e83269-d397-46ef-9298-4293066207f4")
-		)
-		(instances
-			(project "erc_demo2"
-				(path "/c0ee82df-0125-4137-95bd-a880c945d7bb"
-					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 44.45 72.39 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9a520e07-6200-47b6-b5a4-823e0cc18465")
-		(property "Reference" "R3"
-			(at 43.18 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100k"
-			(at 42.164 74.93 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 42.672 72.39 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 44.45 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 44.45 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b62d42a8-7efa-4972-a0d1-9b91e0167bdc")
-		)
-		(pin "1"
-			(uuid "f5f6c248-7d7f-4052-bdf1-97e1e8af931a")
-		)
-		(instances
-			(project "erc_demo2"
-				(path "/c0ee82df-0125-4137-95bd-a880c945d7bb"
-					(reference "R3")
+					(reference "#PWR4")
 					(unit 1)
 				)
 			)
@@ -1945,8 +1475,8 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "9faac45f-9835-4157-8044-4e2fc2d149c1")
-		(property "Reference" "J4"
+		(uuid "664deacc-243b-4f75-ad65-fe61a45bc080")
+		(property "Reference" "J3"
 			(at 64.77 62.2299 0)
 			(effects
 				(font
@@ -2005,275 +1535,15 @@
 			(uuid "955c7a41-5b5c-4bfe-911f-d4c2c075cc72")
 		)
 		(instances
-			(project ""
-				(path "/c0ee82df-0125-4137-95bd-a880c945d7bb"
-					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 39.37 77.47 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ca46d8db-7d34-43e9-8b44-09286329e22d")
-		(property "Reference" "#PWR3"
-			(at 39.37 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 39.37 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 39.37 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 39.37 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 39.37 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0d7f9496-8e40-4858-8634-e811c982910b")
-		)
-		(instances
-			(project "erc_demo"
-				(path "/c0ee82df-0125-4137-95bd-a880c945d7bb"
-					(reference "#PWR3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 39.37 45.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cbea023b-9c61-46aa-9046-483f74655666")
-		(property "Reference" "#PWR4"
-			(at 39.37 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 39.37 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 39.37 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 39.37 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 39.37 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "839b1e3e-6fa8-4534-b9b1-5ef7e47999b2")
-		)
-		(instances
-			(project "erc_demo"
-				(path "/c0ee82df-0125-4137-95bd-a880c945d7bb"
-					(reference "#PWR4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 34.29 29.21 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "dd6f5b7a-0ca5-4064-a6d9-b1a51b142895")
-		(property "Reference" "J3"
-			(at 34.29 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x02"
-			(at 29.972 23.114 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 34.29 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 34.29 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 34.29 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "eb467792-2b5f-4d3f-adc1-57a8b395b858")
-		)
-		(pin "2"
-			(uuid "0be87997-b3bb-4845-9f8f-64210a1bc5c0")
-		)
-		(instances
-			(project ""
-				(path "/c0ee82df-0125-4137-95bd-a880c945d7bb"
+			(project "prj_erc"
+				(path "/4193f6fe-8549-4492-bb81-b789debaebf4/a2fb4689-2293-42c4-95ef-94957dcfe7ed"
 					(reference "J3")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 49.53 29.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ea7892ad-6e60-461f-8795-66af7bd4f513")
-		(property "Reference" "#PWR2"
-			(at 49.53 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 49.53 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 49.53 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 49.53 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 49.53 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b7e2dadb-bf44-4c44-bbe8-c6f1c91183e0")
-		)
-		(instances
-			(project "erc_demo"
+			(project ""
 				(path "/c0ee82df-0125-4137-95bd-a880c945d7bb"
-					(reference "#PWR2")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -2287,8 +1557,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "eab59938-f472-46fc-a5ca-685ea55c9817")
-		(property "Reference" "R5"
+		(uuid "75319c49-838c-42ff-8ff3-328c0dbce465")
+		(property "Reference" "R6"
 			(at 48.26 68.58 0)
 			(effects
 				(font
@@ -2340,9 +1610,835 @@
 			(uuid "86881de3-c67b-462f-ba21-845e097ff487")
 		)
 		(instances
+			(project "prj_erc"
+				(path "/4193f6fe-8549-4492-bb81-b789debaebf4/a2fb4689-2293-42c4-95ef-94957dcfe7ed"
+					(reference "R6")
+					(unit 1)
+				)
+			)
 			(project "erc_demo2"
 				(path "/c0ee82df-0125-4137-95bd-a880c945d7bb"
 					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 29.21 62.23 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7b309f58-e7b0-423e-badd-4fab4d98ff52")
+		(property "Reference" "J1"
+			(at 24.638 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x04"
+			(at 29.21 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 29.21 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 29.21 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 29.21 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cf956d92-eaaa-4ab2-b71c-be295944413b")
+		)
+		(pin "1"
+			(uuid "98ddc33f-aeee-4fe2-9e7d-e63472acaba1")
+		)
+		(pin "3"
+			(uuid "364515b6-aded-4b99-887d-86a9521dbf58")
+		)
+		(pin "4"
+			(uuid "4d89f6fd-f414-408a-8761-422bfbcf4d91")
+		)
+		(instances
+			(project "prj_erc"
+				(path "/4193f6fe-8549-4492-bb81-b789debaebf4/a2fb4689-2293-42c4-95ef-94957dcfe7ed"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+			(project "erc_demo2"
+				(path "/c0ee82df-0125-4137-95bd-a880c945d7bb"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 54.61 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "807bf55a-b4ca-40f1-a182-b40ec9fd2660")
+		(property "Reference" "R8"
+			(at 53.34 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 52.324 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 52.832 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 54.61 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 54.61 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1062b214-8cdc-45d3-b7f2-c25a220a2005")
+		)
+		(pin "1"
+			(uuid "f5338bf8-6b27-4795-b737-dc6b68e02361")
+		)
+		(instances
+			(project "prj_erc"
+				(path "/4193f6fe-8549-4492-bb81-b789debaebf4/a2fb4689-2293-42c4-95ef-94957dcfe7ed"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+			(project "erc_demo2"
+				(path "/c0ee82df-0125-4137-95bd-a880c945d7bb"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 34.29 29.21 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9bb8cc8b-0428-442b-a9e1-065ebf45eecc")
+		(property "Reference" "J2"
+			(at 34.29 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 29.972 23.114 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 34.29 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 34.29 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eb467792-2b5f-4d3f-adc1-57a8b395b858")
+		)
+		(pin "2"
+			(uuid "0be87997-b3bb-4845-9f8f-64210a1bc5c0")
+		)
+		(instances
+			(project "prj_erc"
+				(path "/4193f6fe-8549-4492-bb81-b789debaebf4/a2fb4689-2293-42c4-95ef-94957dcfe7ed"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/c0ee82df-0125-4137-95bd-a880c945d7bb"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 39.37 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9c85288f-c443-4bdf-a7e9-6c8a8f552655")
+		(property "Reference" "#PWR0101"
+			(at 39.37 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 39.37 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 39.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 39.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 39.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0d7f9496-8e40-4858-8634-e811c982910b")
+		)
+		(instances
+			(project "prj_erc"
+				(path "/4193f6fe-8549-4492-bb81-b789debaebf4/a2fb4689-2293-42c4-95ef-94957dcfe7ed"
+					(reference "#PWR0101")
+					(unit 1)
+				)
+			)
+			(project "erc_demo"
+				(path "/c0ee82df-0125-4137-95bd-a880c945d7bb"
+					(reference "#PWR3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 44.45 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ab0c2300-918a-47f4-9f8e-63995bd7aa4f")
+		(property "Reference" "R3"
+			(at 43.18 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 46.99 54.864 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 42.672 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 44.45 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1318d500-63f6-4781-a3df-a429101f9bef")
+		)
+		(pin "1"
+			(uuid "e760d6ac-c581-41d8-844f-f406048e49c8")
+		)
+		(instances
+			(project "prj_erc"
+				(path "/4193f6fe-8549-4492-bb81-b789debaebf4/a2fb4689-2293-42c4-95ef-94957dcfe7ed"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+			(project "erc_demo2"
+				(path "/c0ee82df-0125-4137-95bd-a880c945d7bb"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 44.45 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "aed33b5d-5f05-4b0e-ae75-c32f3fb8cd0c")
+		(property "Reference" "R4"
+			(at 43.18 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 42.164 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 42.672 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 44.45 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b62d42a8-7efa-4972-a0d1-9b91e0167bdc")
+		)
+		(pin "1"
+			(uuid "f5f6c248-7d7f-4052-bdf1-97e1e8af931a")
+		)
+		(instances
+			(project "prj_erc"
+				(path "/4193f6fe-8549-4492-bb81-b789debaebf4/a2fb4689-2293-42c4-95ef-94957dcfe7ed"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+			(project "erc_demo2"
+				(path "/c0ee82df-0125-4137-95bd-a880c945d7bb"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 39.37 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c7a80719-0ccb-4393-a1a4-9159791a33f4")
+		(property "Reference" "R1"
+			(at 38.1 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 41.656 55.118 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 37.592 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 39.37 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 39.37 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8a5b81a5-2445-4a3c-8c41-12bca87316a7")
+		)
+		(pin "1"
+			(uuid "a0d180b7-2fc5-4b06-a30b-fd1698caf273")
+		)
+		(instances
+			(project "prj_erc"
+				(path "/4193f6fe-8549-4492-bb81-b789debaebf4/a2fb4689-2293-42c4-95ef-94957dcfe7ed"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+			(project "erc_demo"
+				(path "/c0ee82df-0125-4137-95bd-a880c945d7bb"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 44.45 29.21 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cb6dd0d6-ef28-446a-b0bc-53ae08701fe0")
+		(property "Reference" "#FLG0101"
+			(at 44.45 31.115 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 41.656 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 44.45 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 44.45 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4e750b15-f376-4337-85e0-11d9cb695684")
+		)
+		(instances
+			(project "prj_erc"
+				(path "/4193f6fe-8549-4492-bb81-b789debaebf4/a2fb4689-2293-42c4-95ef-94957dcfe7ed"
+					(reference "#FLG0101")
+					(unit 1)
+				)
+			)
+			(project "erc_demo"
+				(path "/c0ee82df-0125-4137-95bd-a880c945d7bb"
+					(reference "#FLG2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 49.53 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cc7db0d4-93ac-49e9-8483-88a2c3b9538d")
+		(property "Reference" "#PWR0103"
+			(at 49.53 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 49.53 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 49.53 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "524b833d-4889-49cc-aae3-2e9a174ebff8")
+		)
+		(instances
+			(project "prj_erc"
+				(path "/4193f6fe-8549-4492-bb81-b789debaebf4/a2fb4689-2293-42c4-95ef-94957dcfe7ed"
+					(reference "#PWR0103")
+					(unit 1)
+				)
+			)
+			(project "erc_demo"
+				(path "/c0ee82df-0125-4137-95bd-a880c945d7bb"
+					(reference "#PWR1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 49.53 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d917a5e6-1ff4-4fd2-9905-863185eb9f4d")
+		(property "Reference" "R5"
+			(at 48.26 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 52.07 54.864 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 47.752 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 49.53 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 49.53 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "166f2ad3-558e-47a4-870b-aaf4254e5960")
+		)
+		(pin "1"
+			(uuid "88e83269-d397-46ef-9298-4293066207f4")
+		)
+		(instances
+			(project "prj_erc"
+				(path "/4193f6fe-8549-4492-bb81-b789debaebf4/a2fb4689-2293-42c4-95ef-94957dcfe7ed"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+			(project "erc_demo2"
+				(path "/c0ee82df-0125-4137-95bd-a880c945d7bb"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 39.37 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e3ddfca6-ff24-4d60-9f35-1c8d0cdc31c4")
+		(property "Reference" "R2"
+			(at 38.1 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 37.084 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 37.592 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 39.37 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 39.37 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3b7ba3ad-1329-4a33-a297-2a0b491ee551")
+		)
+		(pin "1"
+			(uuid "30c55a77-1906-47f5-a587-4ac61838c38e")
+		)
+		(instances
+			(project "prj_erc"
+				(path "/4193f6fe-8549-4492-bb81-b789debaebf4/a2fb4689-2293-42c4-95ef-94957dcfe7ed"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/c0ee82df-0125-4137-95bd-a880c945d7bb"
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -2356,8 +2452,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "fca77d1d-8d65-4b31-9a84-ef3a79b78d4d")
-		(property "Reference" "#FLG1"
+		(uuid "fac13b1b-0e7d-4edd-bfef-289eb7c19bda")
+		(property "Reference" "#FLG0102"
 			(at 44.45 24.765 0)
 			(effects
 				(font
@@ -2405,6 +2501,12 @@
 			(uuid "94021f2c-3d2a-4623-8d16-b7bc1b5e41de")
 		)
 		(instances
+			(project "prj_erc"
+				(path "/4193f6fe-8549-4492-bb81-b789debaebf4/a2fb4689-2293-42c4-95ef-94957dcfe7ed"
+					(reference "#FLG0102")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/c0ee82df-0125-4137-95bd-a880c945d7bb"
 					(reference "#FLG1")
